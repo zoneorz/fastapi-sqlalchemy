@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-sqlalchemy"
+version = "0.1.0"
+description = ""
+authors = ["zoneorz <www.zone.orz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.111.0"}
+sqlalchemy = "^2.0.31"
+
+[tool.poetry.group.erd]
+optional = true
+
+[tool.poetry.group.erd.dependencies]
+eralchemy2 = "^1.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
